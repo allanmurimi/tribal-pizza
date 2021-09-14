@@ -5,15 +5,16 @@
 }
 /* BODY */
 body {
-  /* background-image: url("./images/pizza.jpg"); */
-  background-color: black;
+  background-image: url("./images/wall.jpg");
+  contain: content;
 }
 /* HEADER */
 .title {
   display: flex;
   justify-content: center;
   font-weight: bolder;
-  color: papayawhip;
+  margin-bottom: 2rem;
+  color: white;
   font-size: 60px;
   font-style: italic;
   text-decoration: underline;
@@ -21,12 +22,14 @@ body {
 /* NAV BAR */
 nav {
   left: 0;
-  width: 100%;
+  width: 90%;
   height: 70px;
-  background: papayawhip;
+  margin-bottom: 2rem;
+  background-color: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 100;
   justify-content: center;
+  margin-left: 3.5rem;
 }
 nav ul {
   display: flex;
@@ -59,7 +62,7 @@ nav ul li a {
 }
 /* SUBJECT - SIZZLIN DEALS */
 h2 {
-  color: papayawhip;
+  color: white;
   height: 100px;
   padding-left: 40%;
   font-style: italic;
@@ -70,20 +73,42 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   place-items: centre;
   gap: 2rem;
-  margin: 1.2rem auto;
+  margin right: 3rem;
   cursor: pointer;
 }
-
 .deals {
   height: 400px;
   width: 400px;
   display: flex;
-  padding-left: 1.2rem;
+  padding-right: 1rem;
 }
-footer {
-  color: papayawhip;
+.footer {
+  color: white;
   display: grid;
   justify-content: center;
   text-decoration: underline;
   font-style: italic;
+  margin-top: 2rem;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  color: red;
+}
+.icons{
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  gap: 2rem;
+  font-size: 60px;
+  line-height: 60px;
+  transition: 2s;
+  position: relative;
+  /* background-color: white; */
+}
+.icons:hover{
+  transform: translate(0, -10px);
+  transition: .5s;
+  background-color: black;
 }
