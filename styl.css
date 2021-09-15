@@ -73,7 +73,6 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   place-items: centre;
   gap: 2rem;
-  margin right: 3rem;
   cursor: pointer;
 }
 .deals {
@@ -81,34 +80,42 @@ h2 {
   width: 400px;
   display: flex;
   padding-right: 1rem;
+  padding-bottom: 2rem;
 }
+/* FOOTER */
 .footer {
   color: white;
   display: grid;
   justify-content: center;
   text-decoration: underline;
   font-style: italic;
-  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+  margin-top: 3rem;
 }
-.footer-icons {
+.icons ul {
+  position: absolute;
+  top: 92%;
+  left: 50%;
   display: flex;
-  justify-content: center;
-  padding: 2rem 0;
-  color: red;
-}
-.icons{
-  list-style-type: none;
   flex-direction: row;
-  display: flex;
-  gap: 2rem;
-  font-size: 60px;
-  line-height: 60px;
-  transition: 2s;
-  position: relative;
-  /* background-color: white; */
+  justify-content: center;
+  margin-top: 2rem;
+  transform: translate(-50%, -50%);
+  padding-bottom: 2rem;
 }
-.icons:hover{
+.icons ul li {
+  color: red;
+  list-style: none;
+  font-size: 40px;
+  transition: 2s;
+  flex-direction: row;
+  margin: 0 15px;
+  position: relative;
+  contain: content;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+.icons ul li :hover {
   transform: translate(0, -10px);
-  transition: .5s;
-  background-color: black;
+  background-size: cover;
 }
