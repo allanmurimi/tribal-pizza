@@ -203,11 +203,11 @@ body {
   max-width: 19%;
 }
 
-.shop-item {
+.pizza-item {
   margin: 30px;
 }
 
-.shop-item-title {
+.pizza-item-title {
   display: block;
   width: 100%;
   text-align: center;
@@ -217,22 +217,22 @@ body {
   margin-bottom: 15px;
 }
 
-.shop-item-image {
+.pizza-item-image {
   height: 250px;
 }
 
-.shop-item-details {
+.pizza-item-details {
   display: flex;
   align-items: center;
   padding: 5px;
 }
 
-.shop-item-price {
+.pizza-item-price {
   flex-grow: 1;
   color: #333;
 }
 
-.shop-items {
+.pizza-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
