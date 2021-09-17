@@ -68,7 +68,7 @@ if (document.readyState == "loading") {
     var cartItemNames = cartItems.getElementsByClassName("cart-item-title");
     for (var i = 0; i < cartItemNames.length; i++) {
       if (cartItemNames[i].innerText == title) {
-        alert("This item is already added to the cart");
+        alert("This pizza is already added to the cart");
         return;
       }
     }
@@ -102,11 +102,11 @@ if (document.readyState == "loading") {
       var quantityElement = cartRow.getElementsByClassName(
         "cart-quantity-input"
       )[0];
-      var price = parseFloat(priceElement.innerText.replace("$", ""));
+      var price = parseFloat(priceElement.innerText.replace("Kes", ""));
       var quantity = quantityElement.value;
       total = total + price * quantity;
     }
     total = Math.round(total * 100) / 100;
     document.getElementsByClassName("cart-total-price")[0].innerText =
-      "$" + total;
+      "Kes" + total;
   }
