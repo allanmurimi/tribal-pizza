@@ -56,6 +56,16 @@ nav ul li a {
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bolder;
+  text-decoration: none;
+  /* color: ghostwhite; */
+  color: black;
+  font-size: medium;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-decoration: none;
   /* color: ghostwhite; */
   color: black;
   font-size: medium;
@@ -70,10 +80,24 @@ h2 {
 }
 .sizzlin {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: centre;
-  gap: 2rem;
-  cursor: pointer;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 1rem;
+}
+.item-card {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.item-card img {
+  height: auto;
+  object-fit: contain;
+}
+.item-card p {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
 }
 .deals {
   height: 400px;
@@ -81,7 +105,15 @@ h2 {
   display: flex;
   padding-right: 1rem;
   padding-bottom: 2rem;
+  cursor: pointer;
 }
+.type {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+
 /* FOOTER */
 .footer {
   color: white;
@@ -90,7 +122,7 @@ h2 {
   text-decoration: underline;
   font-style: italic;
   margin-bottom: 1.2rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 .icons ul {
   position: absolute;
@@ -104,12 +136,13 @@ h2 {
   padding-bottom: 2rem;
 }
 .icons ul li {
-  color: red;
+  color: #fff;
   list-style: none;
   font-size: 40px;
   transition: 2s;
   flex-direction: row;
   margin: 0 15px;
+  cursor: pointer;
   position: relative;
   contain: content;
   margin-top: 2rem;
@@ -118,4 +151,35 @@ h2 {
 .icons ul li :hover {
   transform: translate(0, -10px);
   background-size: cover;
+}
+/* RESPONSIVE SCREEN */
+@media screen and (max-width: 576px) {
+  .design {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .portfolio {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    gap: 1.5rem;
+    margin: 1rem auto;
+  }
+  .sizzlin {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .sizzlin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 1rem;
+  }
 }
