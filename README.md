@@ -6,7 +6,7 @@ A pizzeria webapp that with e-commerce options
 ## Description
 css; bootstrap; & html... (JS loading)
 ## Languages Used
-css; bootstrap; & html ...(JS loading)
+css; bootstrap; & html & JS
 ## Support & Contact Details
 github.com/allanmurimi or 
 **+254 712 2-- 2--**
